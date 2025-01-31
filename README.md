@@ -1,6 +1,6 @@
 # Homebrew Tap for Commitgenius
 
-This is the official Homebrew tap for [Commitgenius](https://github.com/bannawandoor27/Commitgenius), an AI-powered CLI tool that generates conventional commit messages using local LLMs via Ollama.
+This is the official Homebrew tap for [Commitgenius](https://github.com/bannawandoor27/Commitgenius).
 
 ## Installation
 
@@ -12,14 +12,28 @@ brew tap bannawandoor27/commitgenius
 brew install commitgenius
 ```
 
+## What it Does
+
+Commitgenius is an AI-powered CLI tool that generates conventional commit messages using local LLMs via Ollama. It helps you write better commit messages by analyzing your changes and suggesting appropriate conventional commit messages.
+
 ## Dependencies
 
-- [Ollama](https://ollama.ai/) - Will be installed automatically if not present
+- [Rust](https://www.rust-lang.org/) (installed automatically)
+- [Ollama](https://ollama.ai/) (installed automatically)
 
 ## Usage
 
-See the main [Commitgenius README](https://github.com/bannawandoor27/Commitgenius) for usage instructions.
+After installation, you can use Commitgenius with:
 
-## License
+```bash
+# Stage and commit all changes
+cmgenius .
 
-MIT License
+# Stage and commit specific files
+cmgenius file1.rs file2.rs
+
+# Use a specific model
+cmgenius . --model codellama
+```
+
+For more information, visit the [main repository](https://github.com/bannawandoor27/Commitgenius).
