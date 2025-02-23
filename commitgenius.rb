@@ -1,8 +1,8 @@
 class Commitgenius < Formula
   desc "AI-powered CLI tool that generates conventional commit messages using local LLMs via Ollama"
   homepage "https://github.com/bannawandoor27/Commitgenius"
-  url "https://github.com/bannawandoor27/Commitgenius/archive/refs/tags/v0.2.1.tar.gz"
-  version "0.2.1"
+  url "https://github.com/bannawandoor27/Commitgenius/archive/refs/tags/v0.3.0.tar.gz"
+  version "0.3.0"
   license "MIT"
   head "https://github.com/bannawandoor27/Commitgenius.git", branch: "main"
   
